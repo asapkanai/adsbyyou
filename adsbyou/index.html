@@ -1,0 +1,145 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="nav-bar">
+            <div class="img-container">
+                <img src="Untitled (1).png" alt="Logo" width="40px">
+
+            </div>
+            
+            <!--Creating a search input class-->
+            
+            <div class="search-input">
+                <input type="search" placeholder="Search"><button type="button">Go</button>
+            </div>
+
+            
+           
+            <div class="gui-icons">
+                <div class="icon-wrapper">
+                    <img src="images/write.png" alt="post an ad" onclick="openForm()">
+                    <h4>Post</h4>
+                </div>
+                <div class="icon-wrapper" action="favourites.php">
+                    <img src="images/star_24dp_FILL0_wght400_GRAD0_opsz24 (1).png" alt="post an ad">
+                    <h4>Favourites</h4>
+
+                </div>
+                <div class="icon-subclass">
+                    <span><a href="signup.html">sign up</a></span><span>or</span> <span><a href="login.html">log in</a></span>
+                </div>
+                
+                
+            </div>
+        
+            
+        </div>
+        <hr>
+        
+        <div class="pop-up-form" id="jav-form">
+            <h1>Post</h1>
+            <div class="frm-details">
+                <form id="pos" method="post">
+                    <div class="cont">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Enter your name">
+                    </div>
+                    <div class="cont">
+                    <label for="files" >Upload</label>
+                    <input type="file" multiple name="files" placeholder="Enter images" accept="image/png,image/jpeg,image/webp,image/gif">
+                    </div>
+
+                    <div class="cont">
+                    <label for="description">Description</label>
+                    <textarea name="description" placeholder="Enter the description " class="foo"></textarea>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                    <button type="button" onclick="closeForm()">Cancel</button>
+
+
+
+
+                </form>
+            </div>
+            <hr>
+        </div>
+        <div class="page-after-nav">
+        <div class="container-for-interests">
+            <h4><u>Chat forums</u></h4><br>
+            <ul>
+                <li><a href="politics.html">politics</a></li>
+                <li><a href="#">politics</a></li>
+                <li><a href="#">politics</a></li>
+                <li><a href="#">politics</a></li>
+                <li><a href="#">politics</a></li>
+                <li><a href="#">politics</a></li>
+                <li><a href="#">politics</a></li>
+                <li><a href="#">politics</a></li>
+                <li><a href="#">politics</a></li>
+                <li><a href="#">politics</a></li>
+                <li><a href="#">politics</a></li>
+                <li><a href="#">politics</a></li>
+
+            </ul>
+        </div>
+        <div class="container-for-posting">
+            <div class="view-container">
+                <button>Change View</button>
+                <div class="dropdown-content-container">
+                    <ul>
+                        <li><a href="#">List</a></li>
+                        <li>Grid</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-for-announcements">
+            <h4><u>Trending</u></h4>
+            
+            
+        </div>
+        </div>
+        <hr>
+
+        <footer>
+            <span>2024 &#169;</span>
+            <div class="org-details">
+                <a href="#">report abuse</a>
+                <a href="#">Rules</a>
+                <a href="#">Privacy</a>
+                <a href="#">About</a>
+            </div>
+        
+    
+        </footer>
+
+       
+
+    </div>
+    <script>
+        function openForm(){
+            document.getElementById("jav-form").style.display ="block";
+            document.getElementById("jav-form").style.margin = "auto";
+        }
+        function closeForm(){
+            document.getElementById("jav-form").style.display ="none";
+
+        }
+
+
+    </script>
+    <script></script>
+</body>
+</html>

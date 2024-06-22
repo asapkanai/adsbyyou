@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.log-form{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.log-details{
+    width: 30%;
+    height: 50vh;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    border: 1px solid black;
+    
+}
+.log-specs{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+.log-specs span img{
+    width: 35px;
+    margin-top: 13px;
+}
+.log-specs input{
+    width: 60%;
+    height: 5vh;
+}
+.btn-sign-container{
+    position: relative;
+    width: 20%;
+    height: 4vh;
+    margin: auto;
+
+}
+.btn-sign-container button{
+    padding: 2px 3px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics</title>
+    <link rel="stylesheet" href="politics.css">
+</head>
+<body>
+    <div class="politics-container">
+        <div class="adding-thread-container">
+            <div class="btn-cont">
+            <button type="button" onclick="openForm()"> Start a thread</button>
+            </div>
+            <div class="pop-up-form" id="jav-form">
+                <h1>Post</h1>
+                <div class="frm-details">
+                    <form id="pos" method="post">
+                        <div class="cont">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" placeholder="Enter your name">
+                        </div>
+                        <div class="cont">
+                        <label for="files" >Upload</label>
+                        <input type="file" multiple name="files" placeholder="Enter images" accept="image/png,image/jpeg,image/webp,image/gif">
+                        </div>
+    
+                        <div class="cont">
+                        <label for="description">Description</label>
+                        <textarea name="description" placeholder="Enter the description " class="foo"></textarea>
+                        </div>
+    
+                        <button type="submit">Submit</button>
+                        <button type="button" onclick="closeForm()">Cancel</button>
+    
+    
+    
+    
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="politics-content-container">
+            
+
+        </div>
+    </div>
+    <script src="popup.js"></script>
+    
+</body>
+</html>
